@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+bot:
+build: .
+environment:
+- API_ID=${API_ID}
+- API_HASH=${API_HASH}
+- BOT_TOKEN=${BOT_TOKEN}
+- ADMIN_ID=${ADMIN_ID}
+- OWNER_USERNAME=${OWNER_USERNAME}
+- MONGO_URI=${MONGO_URI}
+- DB_NAME=${DB_NAME}
+restart: unless-stopped
